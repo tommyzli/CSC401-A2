@@ -23,17 +23,24 @@ function outSentence = preprocess( inSentence, language )
   inSentence = [CSC401_A2_DEFNS.SENTSTART ' ' lower( inSentence ) ' ' CSC401_A2_DEFNS.SENTEND];
 
   % trim whitespaces down
-  inSentence = regexprep( inSentence, '\s+', ' ');
+  inSentence = regexprep( inSentence, '\s+', ' ' );
 
   % initialize outSentence
   outSentence = inSentence;
 
   % perform language-agnostic changes
-  outSentence = regexprep( outSentence, '(.*)([.*+-<>=,:;\(\)"])(.*)', '$1 $2 $3')
+  % separate mathematical operators and some punctuation
+  outSentence = regexprep( outSentence, '(.*)([.*+-<>=,:;"])(.*)', '$1 $2 $3' )
+  % separate dashes in between parens
+  outSentence = regexprep( outSentence, '(.*\(.*)(-)(.*\).*)', '$1 $2 $3' )
 
   switch language
    case 'e'
-    % TODO: your code here
+    % Separate punctuation (other than single quotation marks)
+    outSentence = regexprep( outSentence, '([^\w\s''+])', ' $1' )
+
+    % Separate clitics
+    outSentence = regexprep( outSentence, '(\s\w*)(''\w*)', '$1 $2' )
 
    case 'f'
     % TODO: your code here
