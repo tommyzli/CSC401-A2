@@ -4,26 +4,26 @@ function outSentence = preprocess( inSentence, language )
 %
 %  This function preprocesses the input text according to language-specific rules.
 %  Specifically, we separate contractions according to the source language, convert
-%  all tokens to lower-case, and separate end-of-sentence punctuation 
+%  all tokens to lower-case, and separate end-of-sentence punctuation
 %
 %  INPUTS:
-%       inSentence     : (string) the original sentence to be processed 
+%       inSentence     : (string) the original sentence to be processed
 %                                 (e.g., a line from the Hansard)
-%       language       : (string) either 'e' (English) or 'f' (French) 
+%       language       : (string) either 'e' (English) or 'f' (French)
 %                                 according to the language of inSentence
 %
 %  OUTPUT:
 %       outSentence    : (string) the modified sentence
 %
-%  Template (c) 2011 Frank Rudzicz 
+%  Template (c) 2011 Frank Rudzicz
 
   global CSC401_A2_DEFNS
-  
-  % first, convert the input sentence to lower-case and add sentence marks 
+
+  % first, convert the input sentence to lower-case and add sentence marks
   inSentence = [CSC401_A2_DEFNS.SENTSTART ' ' lower( inSentence ) ' ' CSC401_A2_DEFNS.SENTEND];
 
-  % trim whitespaces down 
-  inSentence = regexprep( inSentence, '\s+', ' '); 
+  % trim whitespaces down
+  inSentence = regexprep( inSentence, '\s+', ' ');
 
   % initialize outSentence
   outSentence = inSentence;
@@ -42,4 +42,3 @@ function outSentence = preprocess( inSentence, language )
 
   % change unpleasant characters to codes that can be keys in dictionaries
   outSentence = convertSymbols( outSentence );
-
