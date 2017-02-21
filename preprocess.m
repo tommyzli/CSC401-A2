@@ -40,11 +40,13 @@ function outSentence = preprocess( inSentence, language )
     outSentence = regexprep( outSentence, '([^\w\s''+])', ' $1' )
 
     % Separate clitics
-    outSentence = regexprep( outSentence, '(\s\w*)(''\w*)', '$1 $2' )
+    outSentence = regexprep( outSentence, '((^|\s)\w*)(''\w*)', '$1 $2' )
 
    case 'f'
-    % TODO: your code here
-
+    outSentence = regexprep( outSentence, '(.*[cltj]'')(.*)', '$1 $2')
+    outSentence = regexprep( outSentence, '(.*qu'')(.*)', '$1 $2')
+    outSentence = regexprep( outSentence, '(.*lorsqu'')(on|il)(.*)', '$1 $2$3')
+    outSentence = regexprep( outSentence, '(.*puisqu'')(on|il)(.*)', '$1 $2$3')
   end
 
   % change unpleasant characters to codes that can be keys in dictionaries
