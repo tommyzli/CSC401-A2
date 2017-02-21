@@ -2,7 +2,7 @@ function out = convertSymbols(in)
 %
 %  convertSymbols
 %
-%  This function converts [symbols that cannot be used in 
+%  This function converts [symbols that cannot be used in
 %  Matlab's dictionary as keys] to [special words that can].
 %
 %

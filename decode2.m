@@ -9,22 +9,22 @@ function bestHyp = decode2( french, LM, AM, lmtype, delta, vocabSize )
 %  INPUTS:
 %
 %       french    : (string) a preprocessed french sentence
-%       LM        : a language model of english as defined in lm_train.m      
+%       LM        : a language model of english as defined in lm_train.m
 %       AM        : an alignment model of french given english as defined
-%       in align_ibm1.m  
+%       in align_ibm1.m
 %       lmtype    : (string) either '' (default) or 'smooth' for
-%       add-delta smoothing 
-%       delta     : (float) smoothing parameter where 0<delta<=1 
+%       add-delta smoothing
+%       delta     : (float) smoothing parameter where 0<delta<=1
 %       vocabSize : (integer) the number of words in the vocabulary
 %
-% 
+%
 % (c) 2011 Frank Rudzicz (feel free to modify this)
 
 global CSC401_A2_DEFNS
 
 N        = 5;    % the maximum number of translations for each word in
                  % the sentence
-MAXTRANS = 128; % the maximum number of greedy transformations we perform 
+MAXTRANS = 128; % the maximum number of greedy transformations we perform
 NUMSWAPS = 2;    % the number of random re-orderings of the words
 
 
@@ -41,7 +41,7 @@ if (isempty(lmtype))
   delta = 0;
   vocabSize = length(fieldnames(LM.uni));
 elseif strcmp(lmtype, 'smooth')
-  if (nargin < 6)  
+  if (nargin < 6)
     disp( ['lm_prob: if you specify smoothing, you need all 5' ...
 	   ' parameters']);
     return;
@@ -56,7 +56,7 @@ else
 end
 
 % We assume that the english sentence has as many words as the french
-% sentence 
+% sentence
 
 frenchWords  = strsplit(' ', french );
 englishWords = cell(N, length(frenchWords));
@@ -81,7 +81,7 @@ end
 tmpScores = zeros(length(VE), 1);
 
 % determine the best N translations for each french word on a
-% word-by-word basis 
+% word-by-word basis
 for ifw=1:length(frenchWords)
   for iew=1:length(VE)
     if (isfield(AM, VE{iew}) && isfield(LM.uni, VE{iew}) && isfield(AM.(VE{iew}), (frenchWords{ifw})))
@@ -95,10 +95,10 @@ for ifw=1:length(frenchWords)
   [b,ind] = sort(tmpScores, 'descend');
   scores(:,ifw) = b(1:N);
   englishWords(:,ifw) = VE(ind(1:N));
-end 
+end
 %englishWords
 
-% indices 
+% indices
 wordInd = ones(1, length(frenchWords));
 order   = 1:length(frenchWords);
 
@@ -120,7 +120,7 @@ while (iter < MAXTRANS )
   order = 1:length(frenchWords);
   for i=1:NUMSWAPS
     r = ceil((length(frenchWords)-1).*rand(1));
-    
+
     tmp        = order( r );
     order(r)   = order( r+1 );
     order(r+1) = tmp;

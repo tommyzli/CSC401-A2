@@ -1,20 +1,20 @@
 function pp = perplexity( LM, testDir, language, type, delta )
 %
 %  perplexity
-% 
-%  This function computes the perplexity of language model given a test corpus 
+%
+%  This function computes the perplexity of language model given a test corpus
 %
 %  INPUTS:
 %
 %       LM        : (variable) the language model previously trained by lm_train
-%       testDir   : (directory name) The top-level directory containing 
+%       testDir   : (directory name) The top-level directory containing
 %                   data from which to compute perplexity
 %                   e.g., '/u/cs401/A2_SMT/data/Hansard/Testing/'
 %       language  : (string) either 'e' for English or 'f' for French
 %       type      : (string) either '' (default) or 'smooth' for add-delta smoothing
-%       delta     : (float) smoothing parameter where 0<delta<=1 
+%       delta     : (float) smoothing parameter where 0<delta<=1
 %
-% 
+%
 % Template (c) 2011 Frank Rudzicz
 
 global CSC401_A2_DEFNS
@@ -32,7 +32,7 @@ for iFile=1:length(DD)
 
     processedLine = preprocess(lines{l}, language);
     tpp = lm_prob( processedLine, LM, type, delta, vocabSize );
-    if (tpp > -Inf)   % only consider sentences that have some probability 
+    if (tpp > -Inf)   % only consider sentences that have some probability
       pp = pp + tpp;
       words = strsplit(' ', processedLine);
       N = N + length(words);

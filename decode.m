@@ -9,24 +9,24 @@ function english = decode( french, LM, AM, lmtype, delta, vocabSize )
 %  INPUTS:
 %
 %       french    : (string) a preprocessed french sentence
-%       LM        : a language model of english as defined in lm_train.m      
-%       AM        : an alignment model of french given english as defined in align_ibm1.m  
-%       lmtype    : (string) either '' (default) or 'smooth' for add-delta smoothing 
-%       delta     : (float) smoothing parameter where 0<delta<=1 
+%       LM        : a language model of english as defined in lm_train.m
+%       AM        : an alignment model of french given english as defined in align_ibm1.m
+%       lmtype    : (string) either '' (default) or 'smooth' for add-delta smoothing
+%       delta     : (float) smoothing parameter where 0<delta<=1
 %       vocabSize : (integer) the number of words in the vocabulary
 %
-% 
-% (c) 2011 Siavash Kazemian 
+%
+% (c) 2011 Siavash Kazemian
 
-  % We initially assume that the english sentence has as many words as the french sentence 
-  % and that the i^th french word translates to the i^th english word. 
+  % We initially assume that the english sentence has as many words as the french sentence
+  % and that the i^th french word translates to the i^th english word.
   frenchWords = strsplit(' ', french );
   englishWords = cell(1, length(frenchWords));
-  
-  
-  % the align vector. 
+
+
+  % the align vector.
   %  here, align(i) is the index of the french word that produced the i^th english word
-  %  e.g., if align(2)=3, then that means that we translate the 3rd french word to get the 
+  %  e.g., if align(2)=3, then that means that we translate the 3rd french word to get the
   %  2nd english word
   align = initialize_trans(frenchWords,AM);
   english = greedy_word_order_exchange(align,LM);

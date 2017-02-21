@@ -1,8 +1,8 @@
 function logProb = lm_prob(sentence, LM, type, delta, vocabSize)
 %
 %  lm_prob
-% 
-%  This function computes the LOG probability of a sentence, given a 
+%
+%  This function computes the LOG probability of a sentence, given a
 %  language model and whether or not to apply add-delta smoothing
 %
 %  INPUTS:
@@ -11,7 +11,7 @@ function logProb = lm_prob(sentence, LM, type, delta, vocabSize)
 %                            to compute
 %       LM        : (variable) the LM structure (not the filename)
 %       type      : (string) either '' (default) or 'smooth' for add-delta smoothing
-%       delta     : (float) smoothing parameter where 0<delta<=1 
+%       delta     : (float) smoothing parameter where 0<delta<=1
 %       vocabSize : (integer) the number of words in the vocabulary
 %
 % Template (c) 2011 Frank Rudzicz
@@ -31,7 +31,7 @@ function logProb = lm_prob(sentence, LM, type, delta, vocabSize)
     delta = 0;
     vocabSize = length(fieldnames(LM.uni));
   elseif strcmp(type, 'smooth')
-    if (nargin < 5)  
+    if (nargin < 5)
       disp( 'lm_prob: if you specify smoothing, you need all 5 parameters');
       return;
     end
