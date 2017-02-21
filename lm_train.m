@@ -50,6 +50,28 @@ for iFile=1:length(DD)
 
     % TODO: THE STUDENT IMPLEMENTS THE FOLLOWING
 
+    % count unigrams
+    for x=1:length(words)
+      if isfield(LM.uni, words{x})
+        LM.uni.(words{x}) = LM.uni.(words{x}) + 1
+      else
+        LM.uni.(words{x}) = 1
+      end
+    end
+
+    % count bigrams
+    for x=1:length(words)-1
+        if ~isfield(LM.bi, words{x})
+          LM.bi.(words{x}) = struct()
+        end
+
+        if isfield(LM.bi.(words{x}), words{x+1})
+          LM.bi.(words{x}).(words{x+1}) = LM.bi.(words{x}).(words{x+1}) + 1
+        else
+          LM.bi.(words{x}).(words{x+1}) = 1
+        end
+    end
+
     % TODO: THE STUDENT IMPLEMENTED THE PRECEDING
   end
 end
