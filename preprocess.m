@@ -30,24 +30,27 @@ function outSentence = preprocess( inSentence, language )
 
   % perform language-agnostic changes
   % separate mathematical operators and some punctuation
-  outSentence = regexprep( outSentence, '(.*)([.*+-<>=,:;"])(.*)', '$1 $2 $3' )
+  outSentence = regexprep( outSentence, '(.*)([.*+-<>=,:;"])(.*)', '$1 $2 $3' );
   % separate dashes in between parens
-  outSentence = regexprep( outSentence, '(.*\(.*)(-)(.*\).*)', '$1 $2 $3' )
+  outSentence = regexprep( outSentence, '(.*\(.*)(-)(.*\).*)', '$1 $2 $3' );
 
   switch language
    case 'e'
     % Separate punctuation (other than single quotation marks)
-    outSentence = regexprep( outSentence, '([^\w\s''+])', ' $1' )
+    outSentence = regexprep( outSentence, '([^\w\s''+])', ' $1' );
 
     % Separate clitics
-    outSentence = regexprep( outSentence, '((^|\s)\w*)(''\w*)', '$1 $2' )
+    outSentence = regexprep( outSentence, '((^|\s)\w*)(''\w*)', '$1 $2' );
 
    case 'f'
-    outSentence = regexprep( outSentence, '(.*[cltj]'')(.*)', '$1 $2')
-    outSentence = regexprep( outSentence, '(.*qu'')(.*)', '$1 $2')
-    outSentence = regexprep( outSentence, '(.*lorsqu'')(on|il)(.*)', '$1 $2$3')
-    outSentence = regexprep( outSentence, '(.*puisqu'')(on|il)(.*)', '$1 $2$3')
+    outSentence = regexprep( outSentence, '(.*[cltj]'')(.*)', '$1 $2');
+    outSentence = regexprep( outSentence, '(.*qu'')(.*)', '$1 $2');
+    outSentence = regexprep( outSentence, '(.*lorsqu'')(on|il)(.*)', '$1 $2$3');
+    outSentence = regexprep( outSentence, '(.*puisqu'')(on|il)(.*)', '$1 $2$3');
+
   end
+
+  outSentence = regexprep( outSentence, '\s+', ' ');
 
   % change unpleasant characters to codes that can be keys in dictionaries
   outSentence = convertSymbols( outSentence );
