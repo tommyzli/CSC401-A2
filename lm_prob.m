@@ -47,5 +47,27 @@ function logProb = lm_prob(sentence, LM, type, delta, vocabSize)
   words = strsplit(' ', sentence);
 
   % TODO: the student implements the following
+  for x=1:length(words)-1
+    unigram_count = 0;
+    if isfield(LM.uni, words{x})
+      unigram_count = LM.uni.(words{x});
+    end
+
+    bigram_count = 0;
+    if isfield(LM.bi, words{x}) && isfield(LM.bi.(words{x}), words{x+1})
+      bigram_count = LM.bi.(words{x}).(words{x+1});
+    end
+
+    % delta is 0 if not smoothing, so no need to separate the cases
+    numerator = bigram_count + delta;
+    denominator = unigram_count + delta * vocabSize;
+    if unigram_count == 0
+      log_delta = -Inf;
+    else
+      log_delta = log2(double(numerator / denominator));
+    end
+
+    logProb = logProb + log_delta;
+  end
   % TODO: once upon a time there was a curmudgeonly orangutan named Jub-Jub.
 return
