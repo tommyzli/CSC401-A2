@@ -47,6 +47,7 @@ function logProb = lm_prob(sentence, LM, type, delta, vocabSize)
   words = strsplit(' ', sentence);
 
   % TODO: the student implements the following
+  logProb = 0;
   for x=1:length(words)-1
     unigram_count = 0;
     if isfield(LM.uni, words{x})
@@ -58,11 +59,14 @@ function logProb = lm_prob(sentence, LM, type, delta, vocabSize)
       bigram_count = LM.bi.(words{x}).(words{x+1});
     end
 
-    % delta is 0 if not smoothing, so no need to separate the cases
     numerator = bigram_count + delta;
     denominator = unigram_count + delta * vocabSize;
-    if unigram_count == 0
-      log_delta = -Inf;
+    if unigram_count == 0 | bigram_count == 0
+      log_delta = 0;
+      if delta == 0
+        logProb = -Inf;
+        return
+      end
     else
       log_delta = log2(double(numerator / denominator));
     end

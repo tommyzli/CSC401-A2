@@ -1,0 +1,33 @@
+Perplexity values:
+ - MLE:
+    - English:  11.4924
+    - French:   13.0460
+
+ - delta = 1:
+    - English:  64.9935
+    - French:   97.5052
+
+ - delta = 0.5:
+    - English:  48.2781
+    - French:   68.3921
+
+ - delta = 0.25:
+    - English:  37.2765
+    - French:   49.8563
+
+ - delta = 0.01:
+    - English:  18.0660
+    - French:   19.0890
+
+ - delta = 0.001:
+    - English:  15.3685
+    - French:   14.6375
+
+
+According to my observations, MLE resulted in the lowest perplexity values.
+For add-delta smoothing, the perplexity values decrease as delta approaches 0.
+Additionally, for delta values of 1, 0.5, and 0.25, there is a significant
+difference in the perplexity values of English and French, with French usually
+having higher perplexity values than the English corpus on the same delta value.
+However, as delta approaches 0, the difference in English and French perplexity
+values decrease.
