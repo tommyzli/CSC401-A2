@@ -72,11 +72,32 @@ function [eng, fre] = read_hansard(mydir, numSentences)
 %
 %         eng{i} = strsplit(' ', preprocess(english_sentence, 'e'));
 %
-  %eng = {};
-  %fre = {};
+  eng = {};
+  fre = {};
 
   % TODO: your code goes here.
+  eng_dir = dir([ mydir, filesep, '*', 'e' ]);
+  fre_dir = dir([ mydir, filesep, '*', 'f' ]);
+  read_sentences = 0;
+  for file_index=1:length(eng_dir)
+    disp(eng_dir(file_index).name);
+    eng_lines = textread([mydir, filesep, eng_dir(file_index).name], '%s', 'delimiter', '\n');
+    fre_lines = textread([mydir, filesep, fre_dir(file_index).name], '%s', 'delimiter', '\n');
 
+    for line_index=1:length(eng_lines)
+      eng_sentence = char(eng_lines{line_index});
+      fre_sentence = char(fre_lines{line_index});
+
+      eng{line_index} = strsplit(' ', preprocess(eng_sentence, 'e'));
+      fre{line_index} = strsplit(' ', preprocess(fre_sentence, 'f'));
+
+      read_sentences = read_sentences + 1;
+      if read_sentences >= numSentences
+        return
+      end
+
+    end
+  end
 end
 
 
@@ -88,6 +109,32 @@ function AM = initialize(eng, fre)
     AM = {}; % AM.(english_word).(foreign_word)
 
     % TODO: your code goes here
+    for i=1:length(eng)
+      for eng_index=1:length(eng{i}) 
+        if ~isfield(AM, eng{i}{eng_index})
+          AM.(eng{i}{eng_index}) = {};
+        end
+
+        for fre_index=1:length(fre{i})
+          % first go through and initialize all fields with non zero probabilities as 1
+          AM.(eng{i}{eng_index}).(fre{i}{fre_index}) = 1;
+        end
+      end
+    end
+
+    % now actually calculate the probabilities
+    eng_words = fieldnames(AM);
+    for i=1:length(eng_words)
+      fre_words = fieldnames(AM.(eng_words{i}));
+
+      for j=1:length(fre_words)
+        AM.(eng_words{i}).(fre_words{j}) = 1 / length(fre_words);
+      end
+    end
+    
+
+    AM.SENTEND.SENTEND = 1;
+    AM.SENTSTART.SENTSTART = 1;
 
 end
 
