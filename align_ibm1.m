@@ -144,6 +144,55 @@ function t = em_step(t, eng, fre)
 %
 
   % TODO: your code goes here
-end
+  tcount = struct();
+  total = struct();
 
+  eng_words = fieldnames(t);
+  for i=1:length(eng_words)
+    % initialize total(e) as 0 for all e
+    total.(eng_words{i}) = 0;
+
+    fre_words = fieldnames(t.(eng_words{i}));
+    for j=1:length(fre_words)
+      % initialize tcount(f, e) as 0 for all f, e
+      tcount.(eng_words{i}).(fre_words{j}) = 0;
+    end
+  end
+
+  for i=1:length(eng)
+    unique_eng = unique(eng{i});
+    unique_fre = unique(fre{i});
+
+    for f=1:length(unique_fre)
+      denom_c = 0;
+
+      % counting occurrences of word at fre{i}, found at
+      % https://www.mathworks.com/matlabcentral/answers/115838-count-occurrences-of-string-in-a-single-cell-array-how-many-times-a-string-appear#answer_124094
+      [unique_f, ~, J] = unique(fre{i});
+      count_f = histc(J, 1:numel(unique_fre));
+
+      for e=1:length(unique_eng)
+        denom_c = denom_c + (t.(unique_eng{e}).(unique_fre{f}) * count_f);
+      end
+
+      for e=1:length(unique_eng)
+        [unique_e, ~, J] = unique(eng{i});
+        count_e = histc(J, 1:numel(unique_eng));
+
+        tcount_delta = t.(unique_eng{e}).(unique_fre{f}) * count_f(f) * count_e(e) / denom_c;
+        tcount.(unique_eng{e}).(unique_fre{f}) = tcount.(unique_eng{e}).(unique_fre{f}) + tcount_delta;
+
+        total_delta = t.(unique_eng{e}).(unique_fre{f}) * count_f(f) * count_e(e) / denom_c;
+        total.(unique_eng{e}) = total.(unique_eng{e}) + total_delta;
+      end
+    end
+  end
+
+  for i=1:length(eng_words)
+    fre_words = fieldnames(t.(eng_words{i})) ;
+    for j=1:length(fre_words)
+      t.(eng_words{i}).(fre_words{j}) = tcount.(eng_words{i}).(fre_words{j}) / total.(eng_words{i});
+    end
+  end
+end
 
