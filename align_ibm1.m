@@ -45,7 +45,7 @@ function AM = align_ibm1(trainDir, numSentences, maxIter, fn_AM)
   end
 
   % Save the alignment model
-  save( fn_AM, 'AM', '-mat');
+  %save( fn_AM, 'AM', '-mat');
 
   end
 
@@ -160,30 +160,26 @@ function t = em_step(t, eng, fre)
   end
 
   for i=1:length(eng)
-    unique_eng = unique(eng{i});
-    unique_fre = unique(fre{i});
+    % counting occurrences of word at fre{i}, found at
+    % https://www.mathworks.com/matlabcentral/answers/115838-count-occurrences-of-string-in-a-single-cell-array-how-many-times-a-string-appear#answer_124094
+    [unique_f, ~, J] = unique(fre{i});
+    count_f = histc(J, 1:numel(unique_f));
+    [unique_e, ~, J] = unique(eng{i});
+    count_e = histc(J, 1:numel(unique_e));
 
-    for f=1:length(unique_fre)
+    for f=1:length(unique_f)
       denom_c = 0;
 
-      % counting occurrences of word at fre{i}, found at
-      % https://www.mathworks.com/matlabcentral/answers/115838-count-occurrences-of-string-in-a-single-cell-array-how-many-times-a-string-appear#answer_124094
-      [unique_f, ~, J] = unique(fre{i});
-      count_f = histc(J, 1:numel(unique_fre));
-
-      for e=1:length(unique_eng)
-        denom_c = denom_c + (t.(unique_eng{e}).(unique_fre{f}) * count_f);
+      for e=1:length(unique_e)
+        denom_c = denom_c + (t.(unique_e{e}).(unique_f{f}) * count_f(f));
       end
 
-      for e=1:length(unique_eng)
-        [unique_e, ~, J] = unique(eng{i});
-        count_e = histc(J, 1:numel(unique_eng));
+      for e=1:length(unique_e)
+        tcount_delta = (t.(unique_e{e}).(unique_f{f}) * count_f(f) * count_e(e)) / denom_c;
+        tcount.(unique_e{e}).(unique_f{f}) = tcount.(unique_e{e}).(unique_f{f}) + tcount_delta;
 
-        tcount_delta = t.(unique_eng{e}).(unique_fre{f}) * count_f(f) * count_e(e) / denom_c;
-        tcount.(unique_eng{e}).(unique_fre{f}) = tcount.(unique_eng{e}).(unique_fre{f}) + tcount_delta;
-
-        total_delta = t.(unique_eng{e}).(unique_fre{f}) * count_f(f) * count_e(e) / denom_c;
-        total.(unique_eng{e}) = total.(unique_eng{e}) + total_delta;
+        total_delta = (t.(unique_e{e}).(unique_f{f}) * count_f(f) * count_e(e)) / denom_c;
+        total.(unique_e{e}) = total.(unique_e{e}) + total_delta;
       end
     end
   end
