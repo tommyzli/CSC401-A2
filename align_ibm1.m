@@ -45,7 +45,7 @@ function AM = align_ibm1(trainDir, numSentences, maxIter, fn_AM)
   end
 
   % Save the alignment model
-  %save( fn_AM, 'AM', '-mat');
+  save( fn_AM, 'AM', '-mat');
 
   end
 
