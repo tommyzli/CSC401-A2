@@ -80,7 +80,6 @@ function [eng, fre] = read_hansard(mydir, numSentences)
   fre_dir = dir([ mydir, filesep, '*', 'f' ]);
   read_sentences = 0;
   for file_index=1:length(eng_dir)
-    disp(eng_dir(file_index).name);
     eng_lines = textread([mydir, filesep, eng_dir(file_index).name], '%s', 'delimiter', '\n');
     fre_lines = textread([mydir, filesep, fre_dir(file_index).name], '%s', 'delimiter', '\n');
 
