@@ -56,21 +56,18 @@ for i=1:length(numSentences)
     % Calculate BLEU score with n values of {1, 2, 3}
     % first, compute berevity, since it is independant of n value
     candidate_array = strsplit(' ', eng);
-    candidate_length = length(candidate_array);
     reference_1_array = strsplit(' ', testing_english_lines{sentence_index});
-    reference_1_length = length(reference_1_array);
     reference_2_array = strsplit(' ', testing_google_english_lines{sentence_index});
-    reference_2_length = length(reference_2_array);
 
-    if abs(reference_1_length - candidate_length) > abs(reference_2_length - candidate_length)
+    if abs(length(reference_1_array) - length(candidate_array)) > abs(length(reference_2_array) - length(candidate_array))
       % reference 2 is closer in length
-      closer_reference_length = reference_2_length;
+      closer_reference_length = length(reference_2_array);
     else
       % reference 1 is closer in length
-      closer_reference_length = reference_1_length;
+      closer_reference_length = length(reference_1_array);
     end
 
-    berevity = closer_reference_length / candidate_length;
+    berevity = closer_reference_length / length(candidate_array);
     berevity_penalty = 1;
     if berevity >= 1
       berevity_penalty = exp(1 - berevity);
@@ -84,7 +81,7 @@ for i=1:length(numSentences)
         total_ngrams = 0;
         matching_ngrams = 0;
         
-        for j=1:candidate_length-ng
+        for j=1:length(candidate_array)-ng
           % iterate through candidate_array by ngrams of length ng
           ngram = {};
           ngram_i = 1;
@@ -119,8 +116,7 @@ for i=1:length(numSentences)
 
       BLEU_score = BLEU_score * (pval_product ^ (1 / n));
       
-      disp(sprintf('BLEU SCORE for sentence index = %s and n = %s', num2str(sentence_index), num2str(n)));
-      BLEU_score
+      disp(sprintf('BLEU SCORE for sentence index = %s and n = %s is %s', num2str(sentence_index), num2str(n), num2str(BLEU_score)));
 
       % force diary to write to file
       diary off;
