@@ -16,6 +16,7 @@ function parts = strsplit(splitstr, str, option)
 %   Time-stamp:  2004-09-22 08:48:01 +0200
 %   E-mail:      pjacklam@online.no
 %   URL:         http://home.online.no/~pjacklam
+    warning('off', 'all')
 
    nargsin = nargin;
    error(nargchk(2, 3, nargsin));
