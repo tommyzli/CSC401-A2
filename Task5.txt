@@ -1,1776 +1,316 @@
 =========================================================
 TRAINING ON 1000 SENTENCES
 =========================================================
-BLEU SCORE for sentence index = 1 and n = 1
-    0.2143
-
-BLEU SCORE for sentence index = 1 and n = 2
-     0
-
-BLEU SCORE for sentence index = 1 and n = 3
-     0
-
-BLEU SCORE for sentence index = 2 and n = 1
-    0.2500
-
-BLEU SCORE for sentence index = 2 and n = 2
-     0
-
-BLEU SCORE for sentence index = 2 and n = 3
-     0
-
-BLEU SCORE for sentence index = 3 and n = 1
-    0.2315
-
-BLEU SCORE for sentence index = 3 and n = 2
-     0
-
-BLEU SCORE for sentence index = 3 and n = 3
-     0
-
-BLEU SCORE for sentence index = 4 and n = 1
-    0.0769
-
-BLEU SCORE for sentence index = 4 and n = 2
-     0
-
-BLEU SCORE for sentence index = 4 and n = 3
-     0
-
-BLEU SCORE for sentence index = 5 and n = 1
-
-BLEU_score =
-
-    0.3333
-
-BLEU SCORE for sentence index = 5 and n = 2
-
-BLEU_score =
-
-    0.2462
-
-BLEU SCORE for sentence index = 5 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 6 and n = 1
-
-BLEU_score =
-
-    0.1250
-
-BLEU SCORE for sentence index = 6 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 6 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 7 and n = 1
-
-BLEU_score =
-
-    0.2500
-
-BLEU SCORE for sentence index = 7 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 7 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 8 and n = 1
-
-BLEU_score =
-
-    0.2857
-
-BLEU SCORE for sentence index = 8 and n = 2
-
-BLEU_score =
-
-    0.2182
-
-BLEU SCORE for sentence index = 8 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 9 and n = 1
-
-BLEU_score =
-
-    0.4286
-
-BLEU SCORE for sentence index = 9 and n = 2
-
-BLEU_score =
-
-    0.2673
-
-BLEU SCORE for sentence index = 9 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 10 and n = 1
-
-BLEU_score =
-
-    0.1111
-
-BLEU SCORE for sentence index = 10 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 10 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 11 and n = 1
-
-BLEU_score =
-
-    0.6667
-
-BLEU SCORE for sentence index = 11 and n = 2
-
-BLEU_score =
-
-    0.4264
-
-BLEU SCORE for sentence index = 11 and n = 3
-
-BLEU_score =
-
-    0.2630
-
-BLEU SCORE for sentence index = 12 and n = 1
-
-BLEU_score =
-
-    0.1667
-
-BLEU SCORE for sentence index = 12 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 12 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 13 and n = 1
-
-BLEU_score =
-
-    0.1250
-
-BLEU SCORE for sentence index = 13 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 13 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 14 and n = 1
-
-BLEU_score =
-
-    0.3529
-
-BLEU SCORE for sentence index = 14 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 14 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 15 and n = 1
-
-BLEU_score =
-
-    0.3333
-
-BLEU SCORE for sentence index = 15 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 15 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 16 and n = 1
-
-BLEU_score =
-
-    0.3636
-
-BLEU SCORE for sentence index = 16 and n = 2
-
-BLEU_score =
-
-    0.1907
-
-BLEU SCORE for sentence index = 16 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 17 and n = 1
-
-BLEU_score =
-
-    0.2222
-
-BLEU SCORE for sentence index = 17 and n = 2
-
-BLEU_score =
-
-    0.1667
-
-BLEU SCORE for sentence index = 17 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 18 and n = 1
-
-BLEU_score =
-
-    0.3529
-
-BLEU SCORE for sentence index = 18 and n = 2
-
-BLEU_score =
-
-    0.2572
-
-BLEU SCORE for sentence index = 18 and n = 3
-
-BLEU_score =
-
-    0.1640
-
-BLEU SCORE for sentence index = 19 and n = 1
-
-BLEU_score =
-
-    0.2727
-
-BLEU SCORE for sentence index = 19 and n = 2
-
-BLEU_score =
-
-    0.1651
-
-BLEU SCORE for sentence index = 19 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 20 and n = 1
-
-BLEU_score =
-
-    0.1111
-
-BLEU SCORE for sentence index = 20 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 20 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 21 and n = 1
-
-BLEU_score =
-
-    0.1429
-
-BLEU SCORE for sentence index = 21 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 21 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 22 and n = 1
-
-BLEU_score =
-
-    0.3333
-
-BLEU SCORE for sentence index = 22 and n = 2
-
-BLEU_score =
-
-    0.2041
-
-BLEU SCORE for sentence index = 22 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 23 and n = 1
-
-BLEU_score =
-
-    0.3846
-
-BLEU SCORE for sentence index = 23 and n = 2
-
-BLEU_score =
-
-    0.1790
-
-BLEU SCORE for sentence index = 23 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 24 and n = 1
-
-BLEU_score =
-
-    0.1429
-
-BLEU SCORE for sentence index = 24 and n = 2
-
-BLEU_score =
-
-    0.1048
-
-BLEU SCORE for sentence index = 24 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 25 and n = 1
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 25 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 25 and n = 3
-
-BLEU_score =
-
-     0
-
+sentence index      n value     BLEU score
+1                  1          0.21429
+1                  2          0
+1                  3          0
+2                  1          0.25
+2                  2          0
+2                  3          0
+3                  1          0.23149
+3                  2          0
+3                  3          0
+4                  1          0.076923
+4                  2          0
+4                  3          0
+5                  1          0.33333
+5                  2          0.24618
+5                  3          0
+6                  1          0.125
+6                  2          0
+6                  3          0
+7                  1          0.25
+7                  2          0
+7                  3          0
+8                  1          0.28571
+8                  2          0.21822
+8                  3          0
+9                  1          0.42857
+9                  2          0.26726
+9                  3          0
+10                  1          0.11111
+10                  2          0
+10                  3          0
+11                  1          0.66667
+11                  2          0.4264
+11                  3          0.26295
+12                  1          0.16667
+12                  2          0
+12                  3          0
+13                  1          0.125
+13                  2          0
+13                  3          0
+14                  1          0.35294
+14                  2          0
+14                  3          0
+15                  1          0.33333
+15                  2          0
+15                  3          0
+16                  1          0.36364
+16                  2          0.19069
+16                  3          0
+17                  1          0.22222
+17                  2          0.16667
+17                  3          0
+18                  1          0.35294
+18                  2          0.25725
+18                  3          0.16401
+19                  1          0.27273
+19                  2          0.16514
+19                  3          0
+20                  1          0.11111
+20                  2          0
+20                  3          0
+21                  1          0.14286
+21                  2          0
+21                  3          0
+22                  1          0.33333
+22                  2          0.20412
+22                  3          0
+23                  1          0.38462
+23                  2          0.17903
+23                  3          0
+24                  1          0.14286
+24                  2          0.10483
+24                  3          0
+25                  1          0
+25                  2          0
+25                  3          0
 =========================================================
 TRAINING ON 10000 SENTENCES
 =========================================================
-BLEU SCORE for sentence index = 1 and n = 1
-
-BLEU_score =
-
-    0.1429
-
-BLEU SCORE for sentence index = 1 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 1 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 2 and n = 1
-
-BLEU_score =
-
-    0.2500
-
-BLEU SCORE for sentence index = 2 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 2 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 3 and n = 1
-
-BLEU_score =
-
-    0.3087
-
-BLEU SCORE for sentence index = 3 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 3 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 4 and n = 1
-
-BLEU_score =
-
-    0.5385
-
-BLEU SCORE for sentence index = 4 and n = 2
-
-BLEU_score =
-
-    0.2996
-
-BLEU SCORE for sentence index = 4 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 5 and n = 1
-
-BLEU_score =
-
-    0.2500
-
-BLEU SCORE for sentence index = 5 and n = 2
-
-BLEU_score =
-
-    0.1508
-
-BLEU SCORE for sentence index = 5 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 6 and n = 1
-
-BLEU_score =
-
-    0.2500
-
-BLEU SCORE for sentence index = 6 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 6 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 7 and n = 1
-
-BLEU_score =
-
-    0.1667
-
-BLEU SCORE for sentence index = 7 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 7 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 8 and n = 1
-
-BLEU_score =
-
-    0.2857
-
-BLEU SCORE for sentence index = 8 and n = 2
-
-BLEU_score =
-
-    0.2182
-
-BLEU SCORE for sentence index = 8 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 9 and n = 1
-
-BLEU_score =
-
-    0.5714
-
-BLEU SCORE for sentence index = 9 and n = 2
-
-BLEU_score =
-
-    0.3086
-
-BLEU SCORE for sentence index = 9 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 10 and n = 1
-
-BLEU_score =
-
-    0.3333
-
-BLEU SCORE for sentence index = 10 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 10 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 11 and n = 1
-
-BLEU_score =
-
-    0.5000
-
-BLEU SCORE for sentence index = 11 and n = 2
-
-BLEU_score =
-
-    0.3015
-
-BLEU SCORE for sentence index = 11 and n = 3
-
-BLEU_score =
-
-    0.2087
-
-BLEU SCORE for sentence index = 12 and n = 1
-
-BLEU_score =
-
-    0.1667
-
-BLEU SCORE for sentence index = 12 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 12 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 13 and n = 1
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 13 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 13 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 14 and n = 1
-
-BLEU_score =
-
-    0.4706
-
-BLEU SCORE for sentence index = 14 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 14 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 15 and n = 1
-
-BLEU_score =
-
-    0.3333
-
-BLEU SCORE for sentence index = 15 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 15 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 16 and n = 1
-
-BLEU_score =
-
-    0.5455
-
-BLEU SCORE for sentence index = 16 and n = 2
-
-BLEU_score =
-
-    0.2335
-
-BLEU SCORE for sentence index = 16 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 17 and n = 1
-
-BLEU_score =
-
-    0.3333
-
-BLEU SCORE for sentence index = 17 and n = 2
-
-BLEU_score =
-
-    0.2041
-
-BLEU SCORE for sentence index = 17 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 18 and n = 1
-
-BLEU_score =
-
-    0.4118
-
-BLEU SCORE for sentence index = 18 and n = 2
-
-BLEU_score =
-
-    0.2779
-
-BLEU SCORE for sentence index = 18 and n = 3
-
-BLEU_score =
-
-    0.1727
-
-BLEU SCORE for sentence index = 19 and n = 1
-
-BLEU_score =
-
-    0.2727
-
-BLEU SCORE for sentence index = 19 and n = 2
-
-BLEU_score =
-
-    0.1651
-
-BLEU SCORE for sentence index = 19 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 20 and n = 1
-
-BLEU_score =
-
-    0.1111
-
-BLEU SCORE for sentence index = 20 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 20 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 21 and n = 1
-
-BLEU_score =
-
-    0.4286
-
-BLEU SCORE for sentence index = 21 and n = 2
-
-BLEU_score =
-
-    0.3780
-
-BLEU SCORE for sentence index = 21 and n = 3
-
-BLEU_score =
-
-    0.3057
-
-BLEU SCORE for sentence index = 22 and n = 1
-
-BLEU_score =
-
-    0.5556
-
-BLEU SCORE for sentence index = 22 and n = 2
-
-BLEU_score =
-
-    0.3727
-
-BLEU SCORE for sentence index = 22 and n = 3
-
-BLEU_score =
-
-    0.2707
-
-BLEU SCORE for sentence index = 23 and n = 1
-
-BLEU_score =
-
-    0.4615
-
-BLEU SCORE for sentence index = 23 and n = 2
-
-BLEU_score =
-
-    0.1961
-
-BLEU SCORE for sentence index = 23 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 24 and n = 1
-
-BLEU_score =
-
-    0.2143
-
-BLEU SCORE for sentence index = 24 and n = 2
-
-BLEU_score =
-
-    0.1284
-
-BLEU SCORE for sentence index = 24 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 25 and n = 1
-
-BLEU_score =
-
-    0.1429
-
-BLEU SCORE for sentence index = 25 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 25 and n = 3
-
-BLEU_score =
-
-     0
-
+sentence index      n value     BLEU score
+1                  1          0.14286
+1                  2          0
+1                  3          0
+2                  1          0.25
+2                  2          0
+2                  3          0
+3                  1          0.30865
+3                  2          0
+3                  3          0
+4                  1          0.53846
+4                  2          0.29957
+4                  3          0
+5                  1          0.25
+5                  2          0.15076
+5                  3          0
+6                  1          0.25
+6                  2          0
+6                  3          0
+7                  1          0.16667
+7                  2          0
+7                  3          0
+8                  1          0.28571
+8                  2          0.21822
+8                  3          0
+9                  1          0.57143
+9                  2          0.30861
+9                  3          0
+10                  1          0.33333
+10                  2          0
+10                  3          0
+11                  1          0.5
+11                  2          0.30151
+11                  3          0.20871
+12                  1          0.16667
+12                  2          0
+12                  3          0
+13                  1          0
+13                  2          0
+13                  3          0
+14                  1          0.47059
+14                  2          0
+14                  3          0
+15                  1          0.33333
+15                  2          0
+15                  3          0
+16                  1          0.54545
+16                  2          0.23355
+16                  3          0
+17                  1          0.33333
+17                  2          0.20412
+17                  3          0
+18                  1          0.41176
+18                  2          0.27786
+18                  3          0.17266
+19                  1          0.27273
+19                  2          0.16514
+19                  3          0
+20                  1          0.11111
+20                  2          0
+20                  3          0
+21                  1          0.42857
+21                  2          0.37796
+21                  3          0.30571
+22                  1          0.55556
+22                  2          0.37268
+22                  3          0.27072
+23                  1          0.46154
+23                  2          0.19612
+23                  3          0
+24                  1          0.21429
+24                  2          0.12839
+24                  3          0
+25                  1          0
+25                  2          0
+25                  3          0
 =========================================================
 TRAINING ON 15000 SENTENCES
 =========================================================
-BLEU SCORE for sentence index = 1 and n = 1
-
-BLEU_score =
-
-    0.2143
-
-BLEU SCORE for sentence index = 1 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 1 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 2 and n = 1
-
-BLEU_score =
-
-    0.2500
-
-BLEU SCORE for sentence index = 2 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 2 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 3 and n = 1
-
-BLEU_score =
-
-    0.3087
-
-BLEU SCORE for sentence index = 3 and n = 2
-
-BLEU_score =
-
-    0.1612
-
-BLEU SCORE for sentence index = 3 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 4 and n = 1
-
-BLEU_score =
-
-    0.4615
-
-BLEU SCORE for sentence index = 4 and n = 2
-
-BLEU_score =
-
-    0.2774
-
-BLEU SCORE for sentence index = 4 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 5 and n = 1
-
-BLEU_score =
-
-    0.3333
-
-BLEU SCORE for sentence index = 5 and n = 2
-
-BLEU_score =
-
-    0.1741
-
-BLEU SCORE for sentence index = 5 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 6 and n = 1
-
-BLEU_score =
-
-    0.1250
-
-BLEU SCORE for sentence index = 6 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 6 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 7 and n = 1
-
-BLEU_score =
-
-    0.1667
-
-BLEU SCORE for sentence index = 7 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 7 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 8 and n = 1
-
-BLEU_score =
-
-    0.2857
-
-BLEU SCORE for sentence index = 8 and n = 2
-
-BLEU_score =
-
-    0.2182
-
-BLEU SCORE for sentence index = 8 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 9 and n = 1
-
-BLEU_score =
-
-    0.4286
-
-BLEU SCORE for sentence index = 9 and n = 2
-
-BLEU_score =
-
-    0.2673
-
-BLEU SCORE for sentence index = 9 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 10 and n = 1
-
-BLEU_score =
-
-    0.3333
-
-BLEU SCORE for sentence index = 10 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 10 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 11 and n = 1
-
-BLEU_score =
-
-    0.5833
-
-BLEU SCORE for sentence index = 11 and n = 2
-
-BLEU_score =
-
-    0.3989
-
-BLEU SCORE for sentence index = 11 and n = 3
-
-BLEU_score =
-
-    0.2515
-
-BLEU SCORE for sentence index = 12 and n = 1
-
-BLEU_score =
-
-    0.1667
-
-BLEU SCORE for sentence index = 12 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 12 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 13 and n = 1
-
-BLEU_score =
-
-    0.1250
-
-BLEU SCORE for sentence index = 13 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 13 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 14 and n = 1
-
-BLEU_score =
-
-    0.5294
-
-BLEU SCORE for sentence index = 14 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 14 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 15 and n = 1
-
-BLEU_score =
-
-    0.2500
-
-BLEU SCORE for sentence index = 15 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 15 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 16 and n = 1
-
-BLEU_score =
-
-    0.2727
-
-BLEU SCORE for sentence index = 16 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 16 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 17 and n = 1
-
-BLEU_score =
-
-    0.3333
-
-BLEU SCORE for sentence index = 17 and n = 2
-
-BLEU_score =
-
-    0.2041
-
-BLEU SCORE for sentence index = 17 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 18 and n = 1
-
-BLEU_score =
-
-    0.2941
-
-BLEU SCORE for sentence index = 18 and n = 2
-
-BLEU_score =
-
-    0.2348
-
-BLEU SCORE for sentence index = 18 and n = 3
-
-BLEU_score =
-
-    0.1543
-
-BLEU SCORE for sentence index = 19 and n = 1
-
-BLEU_score =
-
-    0.1818
-
-BLEU SCORE for sentence index = 19 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 19 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 20 and n = 1
-
-BLEU_score =
-
-    0.2222
-
-BLEU SCORE for sentence index = 20 and n = 2
-
-BLEU_score =
-
-    0.1667
-
-BLEU SCORE for sentence index = 20 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 21 and n = 1
-
-BLEU_score =
-
-    0.4286
-
-BLEU SCORE for sentence index = 21 and n = 2
-
-BLEU_score =
-
-    0.3780
-
-BLEU SCORE for sentence index = 21 and n = 3
-
-BLEU_score =
-
-    0.3057
-
-BLEU SCORE for sentence index = 22 and n = 1
-
-BLEU_score =
-
-    0.3333
-
-BLEU SCORE for sentence index = 22 and n = 2
-
-BLEU_score =
-
-    0.2041
-
-BLEU SCORE for sentence index = 22 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 23 and n = 1
-
-BLEU_score =
-
-    0.3077
-
-BLEU SCORE for sentence index = 23 and n = 2
-
-BLEU_score =
-
-    0.1601
-
-BLEU SCORE for sentence index = 23 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 24 and n = 1
-
-BLEU_score =
-
-    0.2143
-
-BLEU SCORE for sentence index = 24 and n = 2
-
-BLEU_score =
-
-    0.1816
-
-BLEU SCORE for sentence index = 24 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 25 and n = 1
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 25 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 25 and n = 3
-
-BLEU_score =
-
-     0
-
+sentence index      n value     BLEU score
+1                  1          0.21429
+1                  2          0
+1                  3          0
+2                  1          0.25
+2                  2          0
+2                  3          0
+3                  1          0.30865
+3                  2          0.16119
+3                  3          0
+4                  1          0.46154
+4                  2          0.27735
+4                  3          0
+5                  1          0.33333
+5                  2          0.17408
+5                  3          0
+6                  1          0.125
+6                  2          0
+6                  3          0
+7                  1          0.16667
+7                  2          0
+7                  3          0
+8                  1          0.28571
+8                  2          0.21822
+8                  3          0
+9                  1          0.42857
+9                  2          0.26726
+9                  3          0
+10                  1          0.33333
+10                  2          0
+10                  3          0
+11                  1          0.58333
+11                  2          0.39886
+11                  3          0.25151
+12                  1          0.16667
+12                  2          0
+12                  3          0
+13                  1          0.125
+13                  2          0
+13                  3          0
+14                  1          0.52941
+14                  2          0
+14                  3          0
+15                  1          0.25
+15                  2          0
+15                  3          0
+16                  1          0.27273
+16                  2          0
+16                  3          0
+17                  1          0.33333
+17                  2          0.20412
+17                  3          0
+18                  1          0.29412
+18                  2          0.23483
+18                  3          0.15434
+19                  1          0.18182
+19                  2          0
+19                  3          0
+20                  1          0.44444
+20                  2          0
+20                  3          0
+21                  1          0.42857
+21                  2          0.37796
+21                  3          0.30571
+22                  1          0.33333
+22                  2          0.20412
+22                  3          0
+23                  1          0.30769
+23                  2          0.16013
+23                  3          0
+24                  1          0.21429
+24                  2          0.18157
+24                  3          0
+25                  1          0.14286
+25                  2          0
+25                  3          0
 =========================================================
 TRAINING ON 30000 SENTENCES
 =========================================================
-BLEU SCORE for sentence index = 1 and n = 1
-
-BLEU_score =
-
-    0.3571
-
-BLEU SCORE for sentence index = 1 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 1 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 2 and n = 1
-
-BLEU_score =
-
-    0.1250
-
-BLEU SCORE for sentence index = 2 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 2 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 3 and n = 1
-
-BLEU_score =
-
-    0.3858
-
-BLEU SCORE for sentence index = 3 and n = 2
-
-BLEU_score =
-
-    0.1802
-
-BLEU SCORE for sentence index = 3 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 4 and n = 1
-
-BLEU_score =
-
-    0.3846
-
-BLEU SCORE for sentence index = 4 and n = 2
-
-BLEU_score =
-
-    0.1790
-
-BLEU SCORE for sentence index = 4 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 5 and n = 1
-
-BLEU_score =
-
-    0.3333
-
-BLEU SCORE for sentence index = 5 and n = 2
-
-BLEU_score =
-
-    0.1741
-
-BLEU SCORE for sentence index = 5 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 6 and n = 1
-
-BLEU_score =
-
-    0.1250
-
-BLEU SCORE for sentence index = 6 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 6 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 7 and n = 1
-
-BLEU_score =
-
-    0.3333
-
-BLEU SCORE for sentence index = 7 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 7 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 8 and n = 1
-
-BLEU_score =
-
-    0.4286
-
-BLEU SCORE for sentence index = 8 and n = 2
-
-BLEU_score =
-
-    0.3780
-
-BLEU SCORE for sentence index = 8 and n = 3
-
-BLEU_score =
-
-    0.3057
-
-BLEU SCORE for sentence index = 9 and n = 1
-
-BLEU_score =
-
-    0.2857
-
-BLEU SCORE for sentence index = 9 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 9 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 10 and n = 1
-
-BLEU_score =
-
-    0.2222
-
-BLEU SCORE for sentence index = 10 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 10 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 11 and n = 1
-
-BLEU_score =
-
-    0.5833
-
-BLEU SCORE for sentence index = 11 and n = 2
-
-BLEU_score =
-
-    0.3257
-
-BLEU SCORE for sentence index = 11 and n = 3
-
-BLEU_score =
-
-    0.2197
-
-BLEU SCORE for sentence index = 12 and n = 1
-
-BLEU_score =
-
-    0.1667
-
-BLEU SCORE for sentence index = 12 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 12 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 13 and n = 1
-
-BLEU_score =
-
-    0.1250
-
-BLEU SCORE for sentence index = 13 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 13 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 14 and n = 1
-
-BLEU_score =
-
-    0.3529
-
-BLEU SCORE for sentence index = 14 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 14 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 15 and n = 1
-
-BLEU_score =
-
-    0.3333
-
-BLEU SCORE for sentence index = 15 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 15 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 16 and n = 1
-
-BLEU_score =
-
-    0.3636
-
-BLEU SCORE for sentence index = 16 and n = 2
-
-BLEU_score =
-
-    0.1907
-
-BLEU SCORE for sentence index = 16 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 17 and n = 1
-
-BLEU_score =
-
-    0.3333
-
-BLEU SCORE for sentence index = 17 and n = 2
-
-BLEU_score =
-
-    0.2041
-
-BLEU SCORE for sentence index = 17 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 18 and n = 1
-
-BLEU_score =
-
-    0.3529
-
-BLEU SCORE for sentence index = 18 and n = 2
-
-BLEU_score =
-
-    0.2572
-
-BLEU SCORE for sentence index = 18 and n = 3
-
-BLEU_score =
-
-    0.1640
-
-BLEU SCORE for sentence index = 19 and n = 1
-
-BLEU_score =
-
-    0.1818
-
-BLEU SCORE for sentence index = 19 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 19 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 20 and n = 1
-
-BLEU_score =
-
-    0.1111
-
-BLEU SCORE for sentence index = 20 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 20 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 21 and n = 1
-
-BLEU_score =
-
-    0.4286
-
-BLEU SCORE for sentence index = 21 and n = 2
-
-BLEU_score =
-
-    0.2673
-
-BLEU SCORE for sentence index = 21 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 22 and n = 1
-
-BLEU_score =
-
-    0.3333
-
-BLEU SCORE for sentence index = 22 and n = 2
-
-BLEU_score =
-
-    0.2041
-
-BLEU SCORE for sentence index = 22 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 23 and n = 1
-
-BLEU_score =
-
-    0.5385
-
-BLEU SCORE for sentence index = 23 and n = 2
-
-BLEU_score =
-
-    0.3669
-
-BLEU SCORE for sentence index = 23 and n = 3
-
-BLEU_score =
-
-    0.2304
-
-BLEU SCORE for sentence index = 24 and n = 1
-
-BLEU_score =
-
-    0.2143
-
-BLEU SCORE for sentence index = 24 and n = 2
-
-BLEU_score =
-
-    0.1284
-
-BLEU SCORE for sentence index = 24 and n = 3
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 25 and n = 1
-
-BLEU_score =
-
-    0.1429
-
-BLEU SCORE for sentence index = 25 and n = 2
-
-BLEU_score =
-
-     0
-
-BLEU SCORE for sentence index = 25 and n = 3
-
-BLEU_score =
-
-     0
-
+sentence index      n value     BLEU score
+1                  1          0.35714
+1                  2          0
+1                  3          0
+2                  1          0.25
+2                  2          0
+2                  3          0
+3                  1          0.38582
+3                  2          0.18021
+3                  3          0
+4                  1          0.38462
+4                  2          0.17903
+4                  3          0
+5                  1          0.33333
+5                  2          0.17408
+5                  3          0
+6                  1          0.125
+6                  2          0
+6                  3          0
+7                  1          0.33333
+7                  2          0
+7                  3          0
+8                  1          0.14286
+8                  2          0
+8                  3          0
+9                  1          0.28571
+9                  2          0
+9                  3          0
+10                  1          0.22222
+10                  2          0
+10                  3          0
+11                  1          0.58333
+11                  2          0.32567
+11                  3          0.21971
+12                  1          0.16667
+12                  2          0
+12                  3          0
+13                  1          0.125
+13                  2          0
+13                  3          0
+14                  1          0.35294
+14                  2          0
+14                  3          0
+15                  1          0.33333
+15                  2          0
+15                  3          0
+16                  1          0.36364
+16                  2          0.19069
+16                  3          0
+17                  1          0.33333
+17                  2          0.20412
+17                  3          0
+18                  1          0.35294
+18                  2          0.25725
+18                  3          0.16401
+19                  1          0.18182
+19                  2          0
+19                  3          0
+20                  1          0.11111
+20                  2          0
+20                  3          0
+21                  1          0.42857
+21                  2          0.37796
+21                  3          0.30571
+22                  1          0.33333
+22                  2          0.20412
+22                  3          0
+23                  1          0.53846
+23                  2          0.3669
+23                  3          0.23045
+24                  1          0.21429
+24                  2          0.12839
+24                  3          0
+25                  1          0
+25                  2          0
+25                  3          0

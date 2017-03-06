@@ -45,6 +45,7 @@ for i=1:length(numSentences)
   disp('=========================================================')
   disp(sprintf('TRAINING ON %s SENTENCES', num2str(numSentences{i})));
   disp('=========================================================')
+  disp('sentence index      n value     BLEU score');
   aligned_model_file_name = strcat('fn_AM_', num2str(numSentences{i}), '.mat');
   AMFE = align_ibm1( trainDir, numSentences{i}, 10, aligned_model_file_name );
 
@@ -115,8 +116,8 @@ for i=1:length(numSentences)
       end
 
       BLEU_score = BLEU_score * (pval_product ^ (1 / n));
-      
-      disp(sprintf('BLEU SCORE for sentence index = %s and n = %s is %s', num2str(sentence_index), num2str(n), num2str(BLEU_score)));
+      disp(sprintf('%s                  %s          %s', num2str(sentence_index), num2str(n), num2str(BLEU_score)));
+      %disp(sprintf('BLEU SCORE for sentence index = %s and n = %s is %s', num2str(sentence_index), num2str(n), num2str(BLEU_score)));
 
       % force diary to write to file
       diary off;
