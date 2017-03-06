@@ -55,11 +55,11 @@ for i=1:length(numSentences)
     eng = decode2( fre, LME, AMFE, lm_type, delta, vocabSize );
 
     % Calculate BLEU score with n values of {1, 2, 3}
-    % first, compute berevity, since it is independant of n value
     candidate_array = strsplit(' ', eng);
     reference_1_array = strsplit(' ', testing_english_lines{sentence_index});
     reference_2_array = strsplit(' ', testing_google_english_lines{sentence_index});
 
+    % first, compute berevity, since it is independant of n value
     if abs(length(reference_1_array) - length(candidate_array)) > abs(length(reference_2_array) - length(candidate_array))
       % reference 2 is closer in length
       closer_reference_length = length(reference_2_array);
@@ -75,18 +75,17 @@ for i=1:length(numSentences)
     end
 
     for n=1:3
-      BLEU_score = berevity_penalty;
       p_values = {};
       % second, compute N-gram precisions for N = 1:n
       for ng=1:n
         total_ngrams = 0;
         matching_ngrams = 0;
         
-        for j=1:length(candidate_array)-ng
-          % iterate through candidate_array by ngrams of length ng
+        for j=1:length(candidate_array)-ng+1
           ngram = {};
           ngram_i = 1;
 
+          % iterate through candidate_array by ngrams of length ng
           for k=j:j+ng-1
             ngram{ngram_i} = candidate_array{k};
             ngram_i = ngram_i + 1;
@@ -97,6 +96,7 @@ for i=1:length(numSentences)
           if matched_reference_1
             matching_ngrams = matching_ngrams + 1;
           else
+            % if not in reference 1, try reference 2
             matched_reference_2 = match_ngram(ngram, reference_2_array);
             if matched_reference_2
               matching_ngrams = matching_ngrams + 1;
@@ -115,9 +115,8 @@ for i=1:length(numSentences)
         pval_product = pval_product * p_values{p_index};
       end
 
-      BLEU_score = BLEU_score * (pval_product ^ (1 / n));
+      BLEU_score = berevity_penalty * (pval_product ^ (1 / n));
       disp(sprintf('%s                  %s          %s', num2str(sentence_index), num2str(n), num2str(BLEU_score)));
-      %disp(sprintf('BLEU SCORE for sentence index = %s and n = %s is %s', num2str(sentence_index), num2str(n), num2str(BLEU_score)));
 
       % force diary to write to file
       diary off;
