@@ -15,17 +15,8 @@ vocabSize    = 0;
 numSentences = {1000, 10000, 15000, 30000};
 
 % Train your language models. This is task 2 which makes use of task 1
-if exist(fn_LME, 'file') == 2
-  load(fn_LME, '-mat');
-else
-  LME = lm_train( trainDir, 'e', fn_LME );
-end
-
-if exist(fn_LMF, 'file') == 2
-  load(fn_LMF, '-mat');
-else
-  LMF = lm_train( trainDir, 'f', fn_LMF );
-end
+LME = lm_train( trainDir, 'e', fn_LME );
+LMF = lm_train( trainDir, 'f', fn_LMF );
 
 testing_french_lines = textread(strcat(testDir, 'Task5.f'), '%s', 'delimiter', '\n');
 
@@ -36,7 +27,7 @@ testing_english_lines = textread(strcat(testDir, 'Task5.e'), '%s', 'delimiter', 
 testing_google_english_lines = textread(strcat(testDir, 'Task5.google.e'), '%s', 'delimiter', '\n');
 
 % pipe output into a file
-diary('Task5.txt');
+diary('eval_align_output.txt');
 diary on;
 
 % Train your alignment model of French, given English for each numSentences
@@ -45,7 +36,7 @@ for i=1:length(numSentences)
   disp('=========================================================')
   disp(sprintf('TRAINING ON %s SENTENCES', num2str(numSentences{i})));
   disp('=========================================================')
-  disp('sentence index    n value     len(hansard trans)  len(google trans)   len(my trans)   BLEU score');
+  disp('sentence index    n value     BLEU score');
   aligned_model_file_name = strcat('fn_AM_', num2str(numSentences{i}), '.mat');
   AMFE = align_ibm1( trainDir, numSentences{i}, 10, aligned_model_file_name );
 
@@ -116,12 +107,9 @@ for i=1:length(numSentences)
       end
 
       BLEU_score = berevity_penalty * (pval_product ^ (1 / n));
-      disp(sprintf('%s                %s          %s                  %s                  %s              %s',...
+      disp(sprintf('%s                %s          %s',...
         num2str(sentence_index),...
         num2str(n),...
-        num2str(length(reference_1_array)),...
-        num2str(length(reference_2_array)),...
-        num2str(length(candidate_array)),...
         num2str(BLEU_score)));
 
       % force diary to write to file
